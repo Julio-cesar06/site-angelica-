@@ -1,0 +1,648 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F5F0E9;
+    color: #2B211C;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    width: 100%;
+    padding: 25px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #2B211C;
+
+    border-bottom: 1px solid #b89b62;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo span {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #F5F0E9;
+}
+
+.logo small {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #b89b62;
+}
+
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    font-size: 14px;
+    transition: 0.3s;
+    color: #F5F0E9;
+}
+
+.menu a:hover {
+    opacity: 0.5;
+    color: #b89b62;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 80vh;
+
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+
+    align-items: start;
+
+    gap: 70px;
+
+    padding: 80px 7%;
+    background: #2B211C;
+    color: #F5F0E9;
+}
+
+.subtitulo {
+    color: #b89b62;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #7d756d;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(42px, 5vw, 72px);
+
+    line-height: 1.05;
+
+    font-weight: 400;
+
+    max-width: 700px;
+
+    margin-bottom: 30px;
+    color: #F5F0E9;
+}
+
+.descricao {
+    max-width: 550px;
+    color: #D8CBBE;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border-radius: 50px;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.botao:hover {
+    transform: translateY(-25px);
+    background: #D0B77C;
+}
+
+.principal {
+    background: #B89B62;
+    color: #2B211C;
+}
+
+.secundario {
+    border: 1px solid #B89B62;
+    color: #F5F0E9; 
+}
+.principal:hover {
+    background: #D0B77C;
+}
+
+.secundario:hover {
+    background: #B89B62;
+    color: #2B211C;
+}
+
+/* =========================
+   IMAGENS
+========================= */
+
+.imagem-placeholder {
+    width: 100%;
+    height: 550px;
+
+    background: #d9cec2;
+
+    border-radius: 180px 180px 20px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #6b625b;
+}
+
+
+/* =========================
+   ATALHOS
+========================= */
+
+.atalhos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 0 7%;
+
+    border-top: 1px solid #CDBEA9;
+    border-bottom: 1px solid #CDBEA9;
+    background: #F5F0E9;
+
+}
+
+.atalho {
+    padding: 35px;
+
+    border-right: 1px solid #CDBEA9;
+
+    transition: 0.3s;
+}
+
+.atalho:last-child {
+    border-right: none;
+}
+
+.atalho:hover {
+    background: #E9DED1;
+}
+
+.atalho span {
+    font-size: 12px;
+    color: #B89B62;
+}
+
+.atalho strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    margin: 10px 0;
+    color: #2B211C;
+}
+
+.atalho p {
+    font-size: 14px;
+    color: #706057;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.secao {
+    padding: 130px 7%;
+}
+
+
+/* =========================
+   BIOGRAFIA
+========================= */
+
+.biografia {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+.foto-biografia .imagem-placeholder {
+    height: 500px;
+}
+.foto-biografia img {
+    border: 1px solid #B89B62;
+
+    box-shadow:
+        0 15px 40px rgba(43, 33, 28, 0.15);
+}
+.conteudo-biografia h2,
+.cabecalho-secao h2,
+.atendimento h2,
+.contato h2 {
+    font-family: Georgia, serif;
+
+    font-size: clamp(38px, 4vw, 58px);
+
+    line-height: 1.1;
+
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+.conteudo-biografia p {
+    color: #625a53;
+    margin-bottom: 20px;
+}
+
+.conteudo-biografia h2 {
+    color: #2B211C;
+}
+
+.conteudo-biografia p {
+    color: #62574F;
+}
+/* =========================
+   MÉTODO
+========================= */
+
+.metodo {
+    background: #2B211C;
+    color: #F5F0E9;
+}
+
+.cabecalho-secao {
+    max-width: 750px;
+    margin-bottom: 60px;
+    color: #F5F0E9;
+}
+
+.cabecalho-secao > p:last-child {
+    color: #D8CBBE;
+}
+
+.cards-metodo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    background: #F5F0E9;
+
+    padding: 35px;
+
+    min-height: 250px;
+
+    border-radius: 20px;
+    border: 1px solid #B89B62;
+}
+
+.numero {
+    font-size: 12px;
+    color: #887c70;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    margin: 25px 0 15px;
+    color: #2B211C;
+}
+
+.card p {
+    color: #665e57;
+}
+
+.napro {
+    margin-top: 50px;
+
+    background: #171412;
+    color: #794c0c;
+
+    padding: 30px 50px;
+
+    border-radius: 25px;
+    border: 1px solid #6F5A3A;
+}
+
+.napro h3 {
+    font-family: Georgia, serif;
+    font-size: 21px;
+    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: 400;
+
+    margin-bottom: 15px;
+    color: #D0B77C;
+}
+
+.napro p {
+    color: #ddd6cf;
+}
+
+
+/* =========================
+   ATENDIMENTO
+========================= */
+
+.atendimento {
+    background: #F5F0E9;
+    padding: 100px 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+        color: #2B211C;
+    }
+
+
+.informacoes-atendimento {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.informacoes-atendimento div {
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #d8cec4;
+}
+
+.informacoes-atendimento strong {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #2B211C;
+}
+
+.informacoes-atendimento span {
+    color: #706057;
+}
+
+
+/* =========================
+   CONTATO
+========================= */
+
+.contato {
+    text-align: center;
+
+    padding: 130px 7%;
+
+    background: #171412;
+
+    color: #F5F0E9;
+}
+
+.contato h2 {
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+.contato > p:not(.subtitulo) {
+    color: #d7d0c9;
+
+    max-width: 500px;
+
+    margin: 0 auto 35px;
+}
+
+.contato .subtitulo {
+    color: #B89B62;
+}
+
+.whatsapp {
+    background: #B89B62;
+    color: #171412;
+    }
+    
+    .whatsapp:hover {
+        background: #D0B77C;
+    }
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    padding: 35px 7%;
+
+    display: flex;
+    justify-content: space-between;
+
+    background: #0F0D0C;
+
+    color: #F5F0E9;
+}
+footer strong {
+    color: #D0B77C;
+}
+
+footer p {
+    color: #AFA59B;
+    font-size: 13px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 800px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 60px;
+    }
+
+    .hero-imagem {
+        order: -1;
+    }
+
+    .imagem-placeholder {
+        height: 420px;
+    }
+
+    .atalhos {
+        grid-template-columns: 1fr;
+    }
+
+    .atalho {
+        border-right: none;
+        border-bottom: 1px solid #d8cec4;
+    }
+
+    .biografia {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+    }
+
+    .cards-metodo {
+        grid-template-columns: 1fr;
+    }
+
+    .atendimento {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ================================
+   FOTOS
+================================ */
+/* ================================
+   FOTOS
+================================ */
+
+/* FOTO PRINCIPAL */
+
+.hero-imagem {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+
+    object-fit: contain;
+
+    border-radius: 28px;
+    border: 1px solid #B89B62;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+    background: #eee7df;
+}
+
+
+/* FOTO DA BIOGRAFIA */
+
+.foto-biografia {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+.foto-biografia img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+
+    object-fit: contain;
+
+    border-radius: 24px;
+    border: 1px solid #d8c8b8;
+
+    box-shadow: 0 15px 40px rgba(70, 55, 45, 0.10);
+
+    background: #eee7df;
+}
+
+
+/* ================================
+   CELULAR
+================================ */
+
+@media (max-width: 800px) {
+
+    .hero-imagem {
+        width: 100%;
+        max-width: 390px;
+        transform: none;
+    }
+
+    .hero-imagem img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+
+        border-radius: 22px;
+    }
+
+    .foto-biografia {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .foto-biografia img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+
+        border-radius: 22px;
+    }
+
+}
